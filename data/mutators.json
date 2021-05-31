@@ -1,0 +1,170 @@
+{
+    "AllYouCanEat": {
+        "name": "All You Can Eat",
+        "desc": "Start with 100 supply points."
+    },
+    "AntiMaterielRiflesOnly": {
+        "name": "Anti-Materiel Only",
+        "desc": "Only anti-materiel rifles are available along with normal equipment and explosives."
+    },
+    "BoltActionsOnly": {
+        "name": "Bolt-Actions Only",
+        "desc": "Only bolt-action rifles are available along with normal equipment and explosives."
+    },
+    "Broke": {
+        "name": "Broke",
+        "desc": "Start with 0 supply points."
+    },
+    "BudgetAntiquing": {
+        "name": "Budget Antiquing",
+        "desc": "Normal equipment and explosives, but limited to old and inexpensive weapons."
+    },
+    "BulletSponge": {
+        "name": "Bullet Sponge",
+        "desc": "Health is increased."
+    },
+    "Competitive": {
+        "name": "Competitive",
+        "desc": "Equipment is more expensive, rounds are shorter, and capturing objectives is faster."
+    },
+    "CompetitiveLoadouts": {
+        "name": "Competitive Loadouts",
+        "desc": "Player classes are replaced with those from Competitive."
+    },
+    "FastMovement": {
+        "name": "Fast Movement",
+        "desc": "Move faster."
+    },
+    "Frenzy": {
+        "name": "Frenzy",
+        "desc": "Fight against AI enemies who only use melee attacks. Watch out for special enemies."
+    },
+    "FullyLoaded": {
+        "name": "Fully Loaded",
+        "desc": "All weapons, equipment, and explosives in the game are available in the Loadout Menu."
+    },
+    "Guerrillas": {
+        "name": "Guerrillas",
+        "desc": "Start with 5 supply points."
+    },
+    "Gunslingers": {
+        "name": "Gunslingers",
+        "desc": "Kill the enemy more than they kill you with a big stinkin' revolver. And explosives."
+    },
+    "Hardcore": {
+        "name": "Hardcore",
+        "desc": "Mutator featuring slower movement speeds and longer capture times."
+    },
+    "HeadshotOnly": {
+        "name": "Headshots Only",
+        "desc": "Players only take damage when shot in the head.",
+        "opts_path": "/Script/Insurgency.Mutator_HeadshotOnly",
+        "options": [
+            {
+                "name": "bCheckMeleeDamage",
+                "default": "false",
+                "desc": "Should melee be checked for headshots?"
+            }
+        ]
+    },
+    "HotPotato": {
+        "name": "Hot Potato",
+        "desc": "A live fragmentation grenade is dropped on death.",
+        "opts_path": "/Script/Insurgency.Mutator_HotPotato",
+        "options": [
+            {
+                "name": "GrenadeClass",
+                "default": "/Game/Game/Actors/Projectiles/BP_Projectile_M67.BP_Projectile_M67_C",
+                "desc": "The grenade type to be dropped on death."
+            },
+            {
+                "name": "ThrowbackWeaponClass",
+                "default": "/Game/Game/Actors/Weapons/Grenade/BP_Grenade_M67.BP_Grenade_M67_C",
+                "desc": "Weapon used for throwing back the dropped grenade."
+            },
+            {
+                "name": "bIgnoreHeadshots",
+                "default": "false",
+                "desc": "Don't drop a grenade if it was a headshot?"
+            },
+            {
+                "name": "bBotsOnly",
+                "default": "false",
+                "desc": "Only drop grenades for bots?"
+            }
+        ]
+    },
+    "LockedAim": {
+        "name": "Locked Aim",
+        "desc": "Weapons always point to the center of the screen."
+    },
+    "MakarovsOnly": {
+        "name": "Makarovs Only",
+        "desc": "Makarovs are the only option."
+    },
+    "NoAim": {
+        "name": "No Aim Down Sights",
+        "desc": "Aiming down sights is disabled."
+    },
+    "NoDrops": {
+        "name": "No Drops",
+        "desc": "No scavenging allowed."
+    },
+    "PistolsOnly": {
+        "name": "Pistols Only",
+        "desc": "Only pistols are available along with normal equipment and explosives."
+    },
+    "Poor": {
+        "name": "Poor",
+        "desc": "Start with limited supply."
+    },
+    "ShotgunsOnly": {
+        "name": "Shotguns Only",
+        "desc": "Only Shotguns are available along with normal equipment and explosives."
+    },
+    "SlowCaptureTimes": {
+        "name": "Slow Capture Times",
+        "desc": "Objectives will take longer to capture."
+    },
+    "SlowMovement": {
+        "name": "Slow Movement",
+        "desc": "Move slower."
+    },
+    "SoldierOfFortune": {
+        "name": "Soldier Of Fortune",
+        "desc": "Gain supply points as your score increases."
+    },
+    "SpecialOperations": {
+        "name": "Special Operations",
+        "desc": "Start with 30 supply points."
+    },
+    "Strapped": {
+        "name": "Strapped",
+        "desc": "Start with 1 supply point."
+    },
+    "Ultralethal": {
+        "name": "Ultralethal",
+        "desc": "Everyone dies with one shot."
+    },
+    "Vampirism": {
+        "name": "Vampirism",
+        "desc": "Receive health when dealing damage to enemies equal to the amount of damage dealt.",
+        "opts_path": "/Script/Insurgency.Mutator_Vampirism",
+        "options": [
+            {
+                "name": "bCountFriendlyFire",
+                "default": "false",
+                "desc": "Count friendly fire towards health gain?"
+            },
+            {
+                "name": "MaxHealth",
+                "default": 1000,
+                "desc": "The maximum amount of health that you can gain from damaging other players."
+            }
+        ]
+    },
+    "Warlords": {
+        "name": "Warlords",
+        "desc": "Start with 10 supply points."
+    }
+}

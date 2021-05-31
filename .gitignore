@@ -1,4 +1,7 @@
 data/steamcmd
 data/stored
 data/insurgency_server
-util/__pycache__
+src/main/python/__pycache__
+src/main/python/util/__pycache__
+src/main/python/ui/__pycache__/
+venv

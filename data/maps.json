@@ -1,0 +1,185 @@
+{
+    "Canyon": {
+        "prefix": "Scenario_Crossing_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch"
+        ]
+    },
+    "Farmhouse": {
+        "prefix": "Scenario_Farmhouse_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch",
+            "Survival"
+        ]
+    },
+    "Town": {
+        "prefix": "Scenario_Hideout_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch",
+            "Survival"
+        ]
+    },
+    "Sinjar": {
+        "prefix": "Scenario_Hillside_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch",
+            "Survival"
+        ]
+    },
+    "Ministry": {
+        "prefix": "Scenario_Ministry_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_A",
+            "Skirmish",
+            "Team_Deathmatch"
+        ]
+    },
+    "Compound": {
+        "prefix": "Scenario_Outskirts_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch",
+            "Survival"
+        ]
+    },
+    "Precinct": {
+        "prefix": "Scenario_Precinct_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch",
+            "Survival"
+        ]
+    },
+    "Oilfield": {
+        "prefix": "Scenario_Refinery_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch"
+        ]
+    },
+    "Mountain": {
+        "prefix": "Scenario_Summit_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Firefight_East",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security",
+            "Skirmish",
+            "Team_Deathmatch",
+            "Survival"
+        ]
+    },
+    "Power Plant": {
+        "prefix": "Scenario_PowerPlant_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Firefight_West",
+            "Push_Insurgents",
+            "Push_Security",
+            "Survival"
+        ]
+    },
+    "Buhriz": {
+        "prefix": "Scenario_Tideway_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_West",
+            "Frontline",
+            "Push_Insurgents",
+            "Push_Security"
+        ]
+    },
+    "Bab": {
+        "prefix": "Scenario_Bab_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Outpost",
+            "Push_Insurgents",
+            "Push_Security"
+        ]
+    },
+    "Citadel": {
+        "prefix": "Scenario_Farmhouse_",
+        "gametypes": [
+            "Checkpoint_Insurgents",
+            "Checkpoint_Security",
+            "Domination",
+            "Firefight_East",
+            "Outpost",
+            "Push_Insurgents",
+            "Push_Security",
+            "Survival"
+        ]
+    }
+}

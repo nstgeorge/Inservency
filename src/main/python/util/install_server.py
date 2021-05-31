@@ -3,7 +3,7 @@ import os, platform
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STEAMCMD_LOC = "./data/steamcmd"
+STEAMCMD_LOC = "data/steamcmd"
 
 IS_SERVER_ID = 581330
 IS_SERVER_LOC = "data/insurgency_server"

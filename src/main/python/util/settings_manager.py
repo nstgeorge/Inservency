@@ -1,6 +1,6 @@
-import json, pickle, os
+import json, pickle, os, configparser, platform
 
-SETTINGS_PATH = "./data/stored"
+SETTINGS_PATH = "./data/insurgency_server/Insurgency/Config"
 
 def load_json(json_path):
         '''Helper: Load a JSON path.'''
@@ -23,6 +23,8 @@ class ServerSettingsException(Exception):
 class ServerSettings:
     '''Stores and manages the settings for the server.'''
 
+    settings_dir = SETTINGS_PATH
+
     game_port = 27102
     query_port = 27131
     hostname = "Inservency Server"
@@ -31,6 +33,20 @@ class ServerSettings:
     max_players = 28
     admins = []
     motd = "Welcome to the server!"
+    
+    def __init__(self):
+        platform_specific_folder = ""
+        if platform.system() == "Windows":
+            platform_specific_folder = "WindowsServer"
+        else:
+            platform_specific_folder = "LinuxServer"
+
+        self.settings_dir = os.path.join(SETTINGS_PATH, platform_specific_folder)
+
+        if not os.path.isdir(self.settings_dir):
+            os.makedirs(self.settings_dir)
+
+        
 
     def save_settings(self, name="default", force=False):
         '''Save the settings to the system. `name` can be used to create unique setting saves. If a custom name is provided and the name already exists, `force` will overwrite the file.'''

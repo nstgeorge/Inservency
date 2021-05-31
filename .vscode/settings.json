@@ -1,3 +1,18 @@
 {
-    "python.pythonPath": "C:\\Users\\Nate St. George\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}/src/main/python",
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}/src/main/python",
+    },
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${env:PYTHONPATH};${workspaceFolder}/src/main/python",
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.jediEnabled": false,
+    "python.analysis.downloadChannel": "beta",
+    "python.analysis.autoSearchPaths": true,
+    "python.languageServer": "Microsoft"
+
 }
