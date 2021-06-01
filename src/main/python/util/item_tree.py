@@ -18,6 +18,9 @@ class TreeItem(QtCore.QVariant):
     def child(self, row):
         return self.childItems[row]
 
+    def children(self):
+        return self.childItems
+
     def child_count(self):
         return len(self.childItems)
 
@@ -82,6 +85,11 @@ class TreeModel(QtCore.QAbstractItemModel):
         self.add_from_maps_data(data)
         self.check_col = 0
 
+        self.last_action = None
+
+    def get_root(self):
+        return self.rootItem
+
     def columnCount(self, parent):
         if parent.isValid():
             return parent.internalPointer().column_count()
@@ -109,6 +117,7 @@ class TreeModel(QtCore.QAbstractItemModel):
             if role == QtCore.Qt.CheckStateRole:
                 item = index.internalPointer()
                 item.toggle_check()
+                self.last_action = (item, item.get_check_state())
 
                 self.dataChanged.emit(index, index)
                 return True
@@ -169,6 +178,13 @@ class TreeModel(QtCore.QAbstractItemModel):
             parent_item = parent.internalPointer()
 
         return parent_item.child_count()
+
+    def get_parent_of_data(self, data):
+        for item in self.rootItem.children():
+            if data in [i.data(0) for i in item.children()]:
+                return item.data(0)
+
+        return None
 
     def add_from_maps_data(self, obj: dict):
         for map_name in obj.keys():

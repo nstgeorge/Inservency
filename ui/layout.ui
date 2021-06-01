@@ -246,6 +246,83 @@
               <item>
                <widget class="QTreeView" name="scenarioTreeView"/>
               </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="topMargin">
+                 <number>10</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="startingMapLabel">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Starting Map:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="startingMapDropdown">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string comment="0">Select Map...</string>
+                  </property>
+                  <property name="popupMode">
+                   <enum>QToolButton::MenuButtonPopup</enum>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonTextBesideIcon</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QToolButton" name="startingScenarioDropdown">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Select Scenario...</string>
+                  </property>
+                  <property name="popupMode">
+                   <enum>QToolButton::MenuButtonPopup</enum>
+                  </property>
+                  <property name="toolButtonStyle">
+                   <enum>Qt::ToolButtonTextBesideIcon</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
              </layout>
             </widget>
            </widget>
@@ -310,13 +387,6 @@
                 </widget>
                </item>
                <item>
-                <widget class="QPushButton" name="revertMapListButton">
-                 <property name="text">
-                  <string>Revert Changes</string>
-                 </property>
-                </widget>
-               </item>
-               <item>
                 <widget class="Line" name="line_2">
                  <property name="orientation">
                   <enum>Qt::Horizontal</enum>
@@ -327,6 +397,26 @@
                 <widget class="QPushButton" name="loadMapListButton">
                  <property name="text">
                   <string>Load Map List</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Open Map List:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>None</string>
                  </property>
                 </widget>
                </item>
@@ -351,21 +441,6 @@
          </layout>
         </item>
        </layout>
-      </widget>
-      <widget class="QWidget" name="rcon">
-       <attribute name="title">
-        <string>RCON</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="other">
-       <attribute name="title">
-        <string>Other</string>
-       </attribute>
-      </widget>
-      <widget class="QWidget" name="status">
-       <attribute name="title">
-        <string>Status</string>
-       </attribute>
       </widget>
      </widget>
     </item>
@@ -435,7 +510,7 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="startServerButton">
         <property name="minimumSize">
          <size>
           <width>150</width>

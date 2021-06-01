@@ -25,6 +25,15 @@ def get_friendly_map_scenarios(map_name):
     return [scenario.replace("_", " ") for scenario in SCENARIOS[map_name]["gametypes"]]
 
 
+def get_map_of_scenario(scenario):
+    """Returns the name of the map associated with the scenario."""
+    for map_name in SCENARIOS.keys():
+        if scenario in SCENARIOS[map_name]:
+            return map_name
+
+    return None
+
+
 def get_all_scenarios():
     """Get the dictionary of scenarios associated with maps."""
     return SCENARIOS
@@ -68,9 +77,14 @@ class MapManager:
 
     current_list_path = ""
 
-    def __init__(self):
+    def __init__(self, *maps):
         if not os.path.exists(MAP_LIST_DIR):
             os.makedirs(MAP_LIST_DIR)
+
+        self.append_to_map_list(maps)
+
+    def clear(self):
+        self.map_list = []
 
     def save_map_list(self, path):
         """Save the map lists to the system."""
