@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>796</width>
-    <height>530</height>
+    <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,7 +30,7 @@
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Remote connection settings&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="basicSetup">
        <attribute name="title">
@@ -238,8 +238,8 @@
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>609</width>
-               <height>396</height>
+               <width>586</width>
+               <height>424</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -456,13 +456,13 @@
        <widget class="QLabel" name="serverStatusLabel">
         <property name="minimumSize">
          <size>
-          <width>62</width>
+          <width>70</width>
           <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>62</width>
+          <width>70</width>
           <height>16777215</height>
          </size>
         </property>
